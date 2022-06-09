@@ -15,7 +15,7 @@
   \*********************/
 /***/ (() => {
 
-eval("/*\r\n * @Author: csrigogogo cri.sri@outlook.com\r\n * @Date: 2022-06-09 16:59:14\r\n * @LastEditors: csrigogogo cri.sri@outlook.com\r\n * @LastEditTime: 2022-06-09 17:18:37\r\n * @FilePath: \\webpack-vue\\src\\main.js\r\n * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n */\r\n\r\nconsole.log(\"hello world es5\");\r\n\n\n//# sourceURL=webpack://webpack-vue/./src/main.js?");
+eval("/*\r\n * @Author: csrigogogo cri.sri@outlook.com\r\n * @Date: 2022-06-09 16:59:14\r\n * @LastEditors: csrigogogo cri.sri@outlook.com\r\n * @LastEditTime: 2022-06-09 17:53:49\r\n * @FilePath: \\webpack-vue\\src\\main.js\r\n * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n */\r\n\r\nconsole.log(\"hello world es511\");\r\n\n\n//# sourceURL=webpack://webpack-vue/./src/main.js?");
 
 /***/ })
 
