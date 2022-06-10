@@ -1,4 +1,5 @@
 const path = require("path")
+const { VueLoaderPlugin } = require('vue-loader')
 const htmlWebpackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 // 这个配置文件，起始就是一个 JS 文件，通过 Node 中的模块操作，向外暴露了一个 配置对象
@@ -18,14 +19,22 @@ module.exports = {
     // 配置插件的节点
     new CleanWebpackPlugin(),
     new htmlWebpackPlugin({
-      // 创建一个 在内存中 生成 HTML  页面的插件
-      template: path.join(__dirname, "./src/index.html"), // 指定 模板页面，将来会根据指定的页面路径，去生成内存中的 页面
-      filename: "index.html", // 指定生成的页面的名称
+        // 创建一个 在内存中 生成 HTML  页面的插件
+        template: path.join(__dirname, "./src/index.html"), // 指定 模板页面，将来会根据指定的页面路径，去生成内存中的 页面
+        filename: "index.html", // 指定生成的页面的名称
     }),
+    new VueLoaderPlugin(),
   ],
   module: {
     rules: [
+      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
       { test: /\.css$/, use: ["style-loader", "css-loader"] }, //  配置处理 .css 文件的第三方loader 规则
+      { test: /\.vue$/, use: 'vue-loader' },
     ],
   },
+//   resolve: {
+//       alias: {
+//           'vue$': 'vue/dist/vue.min.js'
+//       }
+//   }
 }
